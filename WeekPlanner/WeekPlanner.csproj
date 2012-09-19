@@ -123,9 +123,28 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data\WeekPlannerContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201209191917448_Restart.cs" />
+    <Compile Include="Migrations\201209191917448_Restart.Designer.cs">
+      <DependentUpon>201209191917448_Restart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209191927598_1.cs" />
+    <Compile Include="Migrations\201209191927598_1.Designer.cs">
+      <DependentUpon>201209191927598_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209191933329_2.cs" />
+    <Compile Include="Migrations\201209191933329_2.Designer.cs">
+      <DependentUpon>201209191933329_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Activity.cs" />
+    <Compile Include="Models\Day.cs" />
+    <Compile Include="Models\Restriction.cs" />
+    <Compile Include="Models\TimeSlot.cs" />
+    <Compile Include="Models\Week.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -224,10 +243,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201209191917448_Restart.resx">
+      <DependentUpon>201209191917448_Restart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209191927598_1.resx">
+      <DependentUpon>201209191927598_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209191933329_2.resx">
+      <DependentUpon>201209191933329_2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
